@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>教务系统登录</title>
+		<style>
+			body{
+				background: #1E9FFF;
+			}
+			#LoginDiv{
+				background-color: white;
+				width: 530px;
+				height: 550px;
+				margin: 0 auto;
+				margin-top: 100px;
+				text-align: center;
+				padding-top: 20px;
+			}
+			#unname{
+				width: 460px;
+				height: 50px;
+				border-radius: 5px;
+				border:1px solid lightgray;
+				margin-left: -30px;
+				background-color: transparent;
+				padding-left: 30px;
+			}
+			#upsw{
+				width: 460px;
+				height: 50px;
+				border-radius: 5px;
+				border:1px solid lightgray;
+				margin-left: -30px;
+				background-color: transparent;
+				padding-left: 30px;
+				margin-top: 11px;
+			}
+			#loginBtn{
+				width: 456px;
+				height: 55px;
+				margin-top: 11px;
+				background-color: #FF8000;
+				border: 1px solid #1E9FFF;
+				border-radius: 5px;
+				color: white;
+				margin-bottom: 20px;
+			}
+			.t1link{
+				text-decoration: none;
+			}
+			.t2link{
+				text-decoration: none;
+			}
+			.t3link{
+				text-decoration: none;
+			}
+			#bottomDiv{
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="LoginDiv">
+			<img src="nuc.png" width="300px" height="80px">
+			<h1>毕业设计管理系统</h1>
+			<img src="user.png">
+			<input placeholder="请输入用户名：" type="text" id="unname" name="username">
+			<br>
+			<img src="password.png">
+			<input placeholder="请输入密码：" type="password" id="upsw" name="userps">
+		    <br>
+		    <button id="loginBtn">登录</button>
+		    <br>
+		    <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&scope=get_idollist%2Cget_fanslist%2Cget_user_info%2Cadd_topic%2Cadd_t%2Cget_info%2Cadd_share&display=&response_type=code&redirect_uri=https%3A%2F%2Fpassport.iqiyi.com%2Fapis%2Fthirdparty%2Fncallback.action%3Ffrom%3D4%26source%3D4%26agenttype%3D1%26device_id%3D7e34944d35775efe36b411fcc7d5fa1e%26isframe%3D1%26redirect_url%3Dhttps%253A%252F%252Fpassport.iqiyi.com%252Fapis%252Fthirdparty%252Fncallback.action%253Ffrom%253D4%26verifyPhone%3D1%26ptid%3D01010021010000000000%26exception_url%3Dhttps%253A%252F%252Fwww.iqiyi.com%252Fthirdlogin%252Fclose.html%26success_url%3Dhttps%253A%252F%252Fwww.iqiyi.com%252Fthirdlogin%252Fclose.html%26is_reg_confirm%3D1%26fromSDK%3D1&client_id=206978&state=WlPOmsYKf4E7fbC4Fw8OAQBvTMLdUnNa2fxJkv5w%252FXHIyfaaFEcBIyTXKD%252BQwBHTeX%252BXfnNSz2pxrP0gVb8VtA%253D%253D" class="t1link">
+		    	<img src="qq.png">
+		    </a>
+		    <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx228cef5813cc7961&scope=snsapi_login&response_type=code&redirect_uri=http%3A%2F%2Fpassport.iqiyi.com%2Fapis%2Fthirdparty%2Fncallback.action%3Ffrom%3D29%26source%3D29%26agenttype%3D1%26device_id%3D7e34944d35775efe36b411fcc7d5fa1e%26isframe%3D1%26redirect_url%3Dhttp%253A%252F%252Fpassport.iqiyi.com%252Fapis%252Fthirdparty%252Fncallback.action%253Ffrom%253D29%26verifyPhone%3D1%26ptid%3D01010021010000000000%26exception_url%3Dhttps%253A%252F%252Fwww.iqiyi.com%252Fthirdlogin%252Fclose.html%26success_url%3Dhttps%253A%252F%252Fwww.iqiyi.com%252Fthirdlogin%252Fclose.html%26is_reg_confirm%3D1%26fromSDK%3D1&splite#wechat_redirect&state=WlPOmsYKf4E7fbC4Fw8OAQBvTMLdUnNa2fxJkv5w%252FXHIyfaaFEcBIyTXKD%252BQwBHTeX%252BXfnNSz2pxrP0gVb8VtA%253D%253D" class="t2link">
+		    	<img src="weixin.png">
+		    </a>
+		    <a href="https://api.weibo.com/oauth2/authorize?scope=all&display=default&redirect_uri=https%3A%2F%2Fpassport.iqiyi.com%2Fapis%2Fthirdparty%2Fncallback.action%3Ffrom%3D2&client_id=1925825497&state=CiBiNzFiOTJhMDYzZjdhYjM1ZTE1YjQ5MDFkYmNkM2IwNRABKgExMABQAmAAaiA3ZTM0OTQ0ZDM1Nzc1ZWZlMzZiNDExZmNjN2Q1ZmExZYIBQmh0dHBzOi8vcGFzc3BvcnQuaXFpeWkuY29tL2FwaXMvdGhpcmRwYXJ0eS9uY2FsbGJhY2suYWN0aW9uP2Zyb209MogBAZABAMgBAdoBFDAxMDEwMDIxMDEwMDAwMDAwMDAwmgIraHR0cHM6Ly93d3cuaXFpeWkuY29tL3RoaXJkbG9naW4vY2xvc2UuaHRtbKICK2h0dHBzOi8vd3d3LmlxaXlpLmNvbS90aGlyZGxvZ2luL2Nsb3NlLmh0bWyqAgExugIBMQ%3D%3D###" class="t3link">
+		    	<img src="weibo.png">
+		    </a>
+		    <br>
+		    <div id="bottomDiv">
+			开发者：赵墨轩 中北大学 软件学院
+			<br>
+			技术支持：xxxx有限公司
+		    </div>
+		</div>
+	</body>
+</html>
